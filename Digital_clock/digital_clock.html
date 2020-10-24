@@ -1,0 +1,36 @@
+<html>
+<head>
+<center>
+<font color="blue" size="50"
+<b><u>Digital clock</u></br><br><br>
+</font>
+</center>
+<script language="javascript">
+
+function clock()
+{
+var t;
+var today=new Date();
+var hr=today.getHours();
+var min=today.getMinutes();
+var sec=today.getSeconds();
+document.f1.t1.value=hr+":"+min+":"+sec;
+t=setTimeout("clock()",1000);
+}
+
+</script>
+</head>
+
+<body onload="clock()" bgcolor="saffron"><center>
+
+<form name="f1";
+<font color="green">
+<label for="t1">current time is:</label>
+<input type="text" name="t1" disabled><br><br>
+
+</font>
+</form>
+</center>
+</body>
+</html>
+
